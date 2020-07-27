@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap');
+
+body{
+    background-color: #1d1e20;
+    font-family:'Montserrat', sans-serif;
+    
+}
+
+.filter_link{
+    display:block;
+    list-style-type: none;
+    display:flex;
+    justify-content: space-between;
+    padding-left: 0px;
+    /* margin-left: -10px; */
+    
+   
+   
+}
+
+@media screen and (max-width:450px){
+    .filter_link{
+       display: list-item;
+    }
+}
+
+.filter_link li a{
+    color:white;
+    font-size: 1.2em;
+    text-decoration: none;
+    padding-right: 20px;
+    padding-top: 10px;
+    font-family:'Montserrat', sans-serif;
+}
+
+.filter_link li a:hover{
+    color:#ca3466;
+}
+
+
+
+.stage{
+    padding-left: 0px;
+    margin-left: 0px;
+    background-color: #282828;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box_button span a{
+    color : white;
+    font-size: 1.5em;
+    text-shadow: 0px 0px 10px #ca3466;
+}
+
+.box_button a:hover{
+    color: #ca3466;
+    text-decoration: none;
+    font-size: 1.5em;
+    text-shadow: none;
+}
+
+.poster_head{
+    padding: 20px;
+    font-weight: 700;
+    font-family:'Montserrat', sans-serif;
+    font-size: 1em;
+    color: white;
+    margin-top: 48%;
+    text-align: center;
+
+}
+
+.clearfix{
+    padding: 0px;
+}
+
+
+/* ======================= */
+/* ============================= */
+.pay_over{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    background-color: rgb(29, 29, 29);
+    top: 0;
+    left: 0;
+    z-index: 10;
+    overflow-y: scroll;
+    display: none;
+    transition: 1s;
+}
+
+
+.pay_box{
+    /* height: 60vh; */
+    width: 80vw;
+    background-color: #121212;
+    margin: 20vh auto;
+    border-radius: 20px;
+    color: white;
+    padding: 10px;
+   
+}
+
+.pay_close a{
+    color: red;
+    padding: 20px;
+    font-size: 2em;
+}
+
+.pay_close a:hover{
+    text-decoration: none;
+}
+
+.pay_desc{
+    /* height: 30vh; */
+    overflow-y: scroll;
+  
+}
+
+@media screen and (max-width:500px)
+{
+    .home_head{
+        font-size: 2em;
+        
+    }
+    
+    .filter_link{
+        font-size: 0.8em;
+    }
+    .pay_box{
+        width: 100%;
+    }
+
+}

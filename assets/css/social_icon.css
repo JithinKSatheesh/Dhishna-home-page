@@ -1,0 +1,75 @@
+/* ============================= */
+/* social media icon */
+
+.social_dhishna{
+	display: flex;
+    flex-wrap: wrap;
+	justify-content: center;
+	padding-left: 0px;
+
+
+}
+
+.social_dhishna li
+{
+	list-style: none;
+    margin: 30px 30px;
+    
+}
+
+.social_dhishna li a .fa{
+	font-size: 1em;
+	color: #e614c6;
+	line-height: 40px;
+	transition: 5s;
+}
+
+.social_dhishna li a{
+	padding-top: 10px;
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-color: #1d1e20;
+	text-align: center;
+	transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
+	transition: .5s;
+	box-shadow: -5px 5px 2px  #e614c6;
+}
+
+.social_dhishna li a:before{
+	position: absolute;
+	left: -10px;
+	top: 4.5px;
+	content: "";
+	height: 100%;
+	width: 10px;
+	background-color: #070707;
+	transition: .5s;
+	transform: rotate(0deg) skewY(-45deg);
+}
+
+
+.social_dhishna li a:after{
+	position: absolute;
+	bottom: -10px;
+	left: -5px;
+	content: "";
+	height: 10px;
+	width:100%;
+	background-color: #1d1e20;
+	transition: .5s;
+	transform: rotate(0deg) skewX(-45deg);
+}
+
+
+.social_dhishna li a:hover{
+	transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px,-20px);
+	box-shadow: -50px 50px 50px  #e614c6;
+}
+
+@media screen and (max-width:400px)
+{
+	.social_dhishna li{
+		margin: 30px 15px;
+	}
+}

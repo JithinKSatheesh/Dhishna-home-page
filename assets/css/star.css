@@ -1,0 +1,198 @@
+
+body{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+
+
+
+.logo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 200px;
+  width: 200px;
+  box-shadow: 0px 0px 20px purple;
+  border-radius: 50%;
+  background-color: #040404;
+  transition: 1s;
+  animation: clicktempt 2s linear infinite;
+  z-index: 10;
+  margin-left: -100px;
+  margin-top: -100px;
+}
+
+.boom{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  /* background-color: black; */
+  background-color: rgb(109, 22, 109);
+
+  box-shadow: 0px 0px 20px purple;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  padding-top: 35px;
+  border-radius: 50%;
+  text-align: center;
+  transition: 1s;
+  margin-left: -50px;
+  margin-top: -50px;
+  color: white;
+  box-shadow: 0px 0px 20px 10px rgb(245, 0, 245);
+
+}
+
+.boom a{
+  color: white;
+  padding: 25px;
+  padding-left: 15px;
+  font-size: 0.8em;
+
+}
+
+.boom a:hover{
+  text-decoration: none;
+  color: black;
+}
+
+.boom i{
+  font-size: 2em;
+}
+
+.boom:hover {
+  box-shadow: 0px 0px 30px 30px rgb(255, 2, 255);
+}
+
+.bubble:nth-of-type(1){
+  transform: translate(150px,150px);
+}
+
+.bubble:nth-of-type(2){
+  transform: translate(-150px,-150px);
+}
+
+.bubble:nth-of-type(3){
+  transform: translate(-150px,+150px);
+}
+
+.bubble:nth-of-type(4){
+  transform: translate(+150px,-150px);
+}
+
+.bubble:nth-of-type(5){
+  transform: translate(0px,200px);
+}
+
+.bubble:nth-of-type(6){
+  transform: translate(200px,0px);
+}
+.bubble:nth-of-type(7){
+  transform: translate(0px,-200px);
+}
+.bubble:nth-of-type(8){
+  transform: translate(-200px,0px);
+}
+
+
+.bright{
+  box-shadow: 0 0 30px 20px rgb(235, 12, 235);
+  filter: brightness(120%) saturate();
+  width: 150px;
+  height: 150px;
+  margin-left: -75px;
+  margin-top: -75px;
+}
+
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+/* animation */
+
+@keyframes clicktempt{
+
+    0%{
+      box-shadow: 0px 0px 20px 5px rgb(245, 0, 245);
+    }
+    50%{
+      box-shadow: 0px 0px 30px 30px rgb(255, 2, 255);
+    }
+    100%{
+      box-shadow: 0px 0px 20px 5px rgb(245, 0, 245);
+    }
+}
+
+
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+
+@media screen and (max-width:450px)
+{
+  .logo{
+    background-color: none;
+    top: 50%;
+    left: 50%;
+    height: 200px;
+    width: 200px;
+    margin-left:-100px;
+    margin-top: -100px;
+  }
+
+  .boom{
+    top: 50%;
+    left: 50%;
+    width: 75px;
+    height: 75px;
+    margin-top: -37.5px;
+    margin-left: -37.5px;
+    padding-top: 23px;
+  }
+
+  .boom a{
+    padding:10px ;
+    font-size: 0.5em;
+  }
+
+  
+
+  .bright{
+    height: 75px;
+    width: 75px;
+    top: 50%;
+    left: 50%;
+    margin-left:-37.5px;
+    margin-top: -37.5px;
+  }
+
+  .bubble:nth-of-type(1){
+    transform: translate(75px,75px);
+  }
+  
+  .bubble:nth-of-type(2){
+    transform: translate(-75px,-75px);
+  }
+  
+  .bubble:nth-of-type(3){
+    transform: translate(-75px,+75px);
+  }
+  
+  .bubble:nth-of-type(4){
+    transform: translate(+75px,-75px);
+  }
+  
+  .bubble:nth-of-type(5){
+    transform: translate(0px,100px);
+  }
+  
+  .bubble:nth-of-type(6){
+    transform: translate(100px,0px);
+  }
+  .bubble:nth-of-type(7){
+    transform: translate(0px,-100px);
+  }
+  .bubble:nth-of-type(8){
+    transform: translate(-100px,0px);
+  }
+  
+  
+}

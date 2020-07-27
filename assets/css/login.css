@@ -1,0 +1,52 @@
+.form_box{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.login_form{
+    width: 300px;
+    color: white;
+}
+
+input[type="tel"]{
+    background-color: black;
+    border: none;
+    border-bottom: 1px solid white;
+    transition: 1s;
+    color: white;
+    transition: 1s;
+}
+
+input[type="name"]{
+    background-color: black;
+    border: none;
+    border-bottom: 1px solid white;
+    transition: 1s;
+    color: white;
+    transition: 1s;
+}
+
+input[type="email"]{
+    background-color: black;
+    border: none;
+    border-bottom: 1px solid white;
+    transition: 1s;
+    color: white;
+    transition: 1s;
+}
+input[type="password"]{
+    background-color: black;
+    border: none;
+    border-bottom: 1px solid white;
+    transition: 1s;
+    color: white;
+}
+
+input[type="email"]:focus{
+    border: none;
+}
+input[type="password"]:focus{
+    border: none;
+}
